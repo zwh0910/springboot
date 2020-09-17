@@ -7,7 +7,7 @@ ADD target/springboot.war /usr/local/tomcat/webapps
 #切换到指定目录,如果不需要修改端口号可不加这两行
 WORKDIR /usr/local/tomcat/conf/
 #设置tomcat的启动端口
-RUN sed -i 's|"8082"|"9020"|' server.xml
+RUN sed -i 's|"8080"|"9020"|' server.xml
 
 
 
